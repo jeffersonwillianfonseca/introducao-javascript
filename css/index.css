@@ -136,3 +136,12 @@ button:disabled {
 .linhatabela {
     background-color: #555;
 }
+
+#mensagens-erro {
+    color: red;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: 0.5s;
+}
