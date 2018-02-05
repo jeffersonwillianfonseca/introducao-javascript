@@ -18,16 +18,18 @@ botaoAdicionar.addEventListener("click", function(event) {
         return;
     }
 
-    //Cria a tr e td do novo objeto
-    var pacienteTr = montaTr(paciente);
-
-    var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTr);
+    adicionaPaciente(paciete);
     form.reset();
 });
 
 
-
+//ADCIONA ACIENTE VIA OBJECT
+function adicionaPaciente(paciente) {
+    //Cria a tr e td do novo objeto
+    var pacienteTr = montaTr(paciente);
+    var tabela = document.querySelector("#tabela-pacientes");
+    tabela.appendChild(pacienteTr);
+}
 
 //functions
 function obtemDadosForm(form) {
